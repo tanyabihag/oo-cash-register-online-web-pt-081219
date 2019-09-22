@@ -17,4 +17,5 @@ def add_item(item, price, quantity = 1)
         @items << item
         counter += 1
       end
+    end
   end
