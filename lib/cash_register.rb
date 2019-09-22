@@ -9,5 +9,6 @@ def initiliazation (discount = 0)
 end
 
 def add_item(item, price, quantity = 1)
-  
+  @price = price
+  @total =+ 
 end
