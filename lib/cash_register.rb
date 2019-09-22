@@ -8,19 +8,16 @@ def initiliazation (total = 0)
   @items = []
 end
 
-def add_item(title,price,quantity = 1)
-    if quantity>1
-      i=0
-      while i<quantity
+  def add_item(title,price,quantity=0)
+      if quantity > 0
+        @price = (price*quantity)
+        @total += @price
+        quantity.times { @items << title }
+      else
+        @price = price
+        @total += price
         @items << title
-        i+=1
       end
-    else
-      @items << title
-    end
-    @total += price*quantity
-    @last_transaction_amount = @total
-    @total
   end
 
   end
