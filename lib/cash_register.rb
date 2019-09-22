@@ -11,4 +11,5 @@ end
 def add_item(item, price, quantity = 1)
   @price = price
   @total +=price * quantity
+  
   end
