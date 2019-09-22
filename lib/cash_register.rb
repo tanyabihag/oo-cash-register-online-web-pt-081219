@@ -1,3 +1,8 @@
 class CashRegister
+
+attr_accessor :total :discount
   
-def initiliazation (total = 0)
+def initiliazation (discount = 0)
+  @total = 0
+  @discount = discount
+end
