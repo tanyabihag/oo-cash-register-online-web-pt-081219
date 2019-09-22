@@ -7,5 +7,5 @@ def initiliazation (discount = 0)
   @discount = discount
 end
 
-def add_item
+def add_item(item, price, quantity = 0)
 end
